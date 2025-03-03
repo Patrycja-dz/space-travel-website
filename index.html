@@ -27,8 +27,18 @@
           class="logo"
         />
       </div>
-      <!-- <nav role="navigation">
-        <ul class="flex primary-navigation underline-indicators">
+      <button
+        aria-expanded="false"
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+      >
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav role="navigation">
+        <ul
+          id="primary-navigation"
+          class="flex primary-navigation underline-indicators"
+        >
           <li class="active">
             <a
               class="text-white uppercase letter-spacing-2 ff-sans-cond"
@@ -58,7 +68,7 @@
             </a>
           </li>
         </ul>
-      </nav> -->
+      </nav>
     </header>
 
     <div class="grid-container grid-container--home">
