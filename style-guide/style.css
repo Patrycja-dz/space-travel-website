@@ -297,10 +297,18 @@ select {
 .primary-navigation {
   --gap: 4rem;
   --underline-gap: 2em;
-  background-color: black;
   list-style: none;
   padding: 0;
   margin: 0;
+  background-color: hsl(var(--clr-dark) / 0.95);
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+  .primary-navigation {
+    background-color: hsl(var(--clr-dark) / 0.85);
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+  }
 }
 @media (max-width: 35rem) {
   .primary-navigation {
